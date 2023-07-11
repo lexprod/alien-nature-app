@@ -1,0 +1,32 @@
+{
+  "name": "alien-nature-app",
+  "version": "1.0.0",
+  "description": "here is our project blah",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexprod/alien-nature-app.git"
+  },
+  "author": "alex anaya & alex colby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexprod/alien-nature-app/issues"
+  },
+  "homepage": "https://github.com/lexprod/alien-nature-app#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
