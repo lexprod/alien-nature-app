@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.scss" />
+    <link rel="stylesheet" href="css/styles.css" />
 
 </head>
 
@@ -51,7 +51,7 @@
             aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="btn btn-lg bg-warning mx-auto mr-sm-5" type="button">Post</button>
+        <a role="button" class="btn btn-lg bg-warning mx-auto mr-sm-5" type="button" href="create.html">Post</a>
         <span class="navbar-text mx-auto mr-sm-3">
             <a href="#" role="button" data-toggle="modal" data-target="#notificationModal">
                 <h2><i class="fa fa-bell"></i></h2>
@@ -64,24 +64,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-    <!--script to make navbar responsive-->
-
-    <script>
-        $(function () {
-            let viewport = window.matchMedia("(min-width: 576px)");
-            if (viewport.matches) {
-                $("#responsiveNavbar").removeClass("fixed-bottom");
-            }
-            $(window).on('resize', function () {
-                if ($(window).width() > 576) {
-                    $("#responsiveNavbar").removeClass("fixed-bottom");
-                } else if ($(window).width() < 576) {
-                    $("#responsiveNavbar").addClass("fixed-bottom");
-                }
-            });
-        })
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
