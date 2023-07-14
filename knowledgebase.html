@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--to do on this page-->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.scss" />
+    <link rel="stylesheet" href="css/styles.css" />
 
 </head>
 
@@ -31,7 +33,7 @@
 
 
 
-    <!--responsive navbar, works with jquery script at the bottom-->
+    <!--responsive navbar-->
 
     <nav id="responsiveNavbar" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-bottom">
         <div class="collapse navbar-collapse" id="navbarToggle">
@@ -64,8 +66,197 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <!--breadcrumbs-->
 
-    <!--script to make navbar responsive-->
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">
+                            <h6>Home</h6>
+                        </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <h6>Knowledgebase</h6>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="row row-content">
+        <div class="col col-sm-5 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Mosses &amp; Algae</h5>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="accordion" id="hangingWebAccordion">
+                        <div id="hangingWeb">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#hangingWebInfo" aria-expanded="true" aria-controls="hangingWebInfo">
+                                    <i class="fa fa-chevron-right"></i> Hanging web
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="hangingWebInfo" class="collapse" aria-labelledby="hangingWeb"
+                            data-parent="#hangingWebAccordion">
+                            <div class="card-body  ">
+                                Description + link to view entry page
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="bubbleBombAccordion">
+                        <div id="bubbleBomb">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#bubbleBombInfo" aria-expanded="true" aria-controls="bubbleBombInfo">
+                                    <i class="fa fa-chevron-right"></i> Bubble Bomb
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="bubbleBombInfo" class="collapse" aria-labelledby="bubbleBomb"
+                            data-parent="#bubbleBombAccordion">
+                            <div class="card-body  ">
+                                Description + link to view entry page
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5>Molds &amp; Fungi</h5>
+                </div>
+                <div class="card-body">
+
+                    <div class="accordion  " id="blackObeliskAccordion">
+                        <div id="blackObelisk">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#blackObeliskInfo" aria-expanded="true"
+                                    aria-controls="blackObeliskInfo">
+                                    <i class="fa fa-chevron-right"></i> Black Obelisk
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="blackObeliskInfo" class="collapse" aria-labelledby="blackObelisk"
+                            data-parent="#blackObeliskAccordion">
+                            <div class="card-body  ">
+                                Description + link to view entry page
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5>Vascular Plants</h5>
+                </div>
+                <div class="card-body">
+
+                    <div class="accordion  " id="slapgrassAccordion">
+                        <div id="slapgrass">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#slapgrassInfo" aria-expanded="true" aria-controls="slapgrassInfo">
+                                    <i class="fa fa-chevron-right"></i> Slapgrass
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="slapgrassInfo" class="collapse" aria-labelledby="slapgrass"
+                            data-parent="#slapgrassAccordion">
+                            <div class="card-body  ">
+                                Description + link to view entry page
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- new entries are added next to each other in the card-body div. This is a template to automate with js at some point. 
+                        
+                        <div class="accordion  " id="plantnameAccordion">
+                        <div id="plantname">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#plantnameInfo" aria-expanded="true" aria-controls="plantnameInfo">
+                                    <i class="fa fa-chevron-right"></i> Plant Name
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="plantnameInfo" class="collapse" aria-labelledby="plantname"
+                            data-parent="#plantnameAccordion">
+                            <div class="card-body  ">
+                                Description + link to view entry page
+                            </div>
+                        </div>
+                    </div> 
+                -->
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="d-none d-sm-block col-sm-7 col-md-6">
+            <div class="card">
+                <div class="card-body container-fluid">
+                    <div class="row">
+                        <div class="col-10 col-lg-8 m-auto">
+                            <img src="img/photo_dummy.png" class="mx-auto w-100 d-inline-block align-self-center">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col card-header mt-3">
+                            <h5>Placeholder name</h5>
+                        </div>
+                    </div>
+
+                    <div class="row cardTable">
+                        <table class="col table table-responsive mx-auto border">
+                            <tbody>
+                                <tr>
+                                    <th>Classification</th>
+                                    <td>classification</td>
+                                </tr>
+                                <tr>
+                                    <th>Description</th>
+                                    <td>description</td>
+                                </tr>
+                                <tr>
+                                    <th>Warnings</th>
+                                    <td>warnings</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 card-header">
+                            <h5>Encounters</h5>
+                        </div>
+
+                        <ul class="list-group col mt-3 ml-4">
+                            <li class="list-group-item"><a href="#">Entry #1</a></li>
+                            <li class="list-group-item"><a href="#">Entry #2</a></li>
+                            <li class="list-group-item"><a href="#">Entry #3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="js/scripts.js"></script>
 

@@ -1,4 +1,4 @@
-// <!--script to make navbar responsive-->
+//script to make navbar responsive
 
 $(function () {
     let viewport = window.matchMedia("(min-width: 576px)");
