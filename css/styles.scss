@@ -1,5 +1,52 @@
-.mapDiv {
-    object-fit: cover;
-    overflow-y:hidden;
-    overflow-x: hidden;
+$color-primary: #93b6b4;
+$color-secondary: rgb(161, 153, 147);
+$color-tetriary: #beb998;
+$color-accent-dark: midnightblue;
+$color-accent-light: #efcb8c;
+$color-light: rgb(249, 244, 239);
+
+$body-font: 'Roboto Condensed', sans-serif;
+$header-font: 'Sonsie One', cursive;
+
+
+body {
+    background-color: $color-secondary;
+    font-family: $body-font;
+
+
+    .jumbotron {
+        background-image: linear-gradient(to top, $color-primary, $color-tetriary, $color-accent-light 90%);
+        font-family: $header-font;
+        color: $color-light;
+    }
+
+    .navbar-dark {
+        background-color: $color-accent-dark;
+        margin: 0;
+        color: $color-light;
+        border: solid 1px $color-secondary;
+
+    }
+
+    .breadcrumb {
+        background-color: $color-light;
+
+    }
+
+    .row-content {
+        padding: 20px 50px;
+        .card {
+            background-color: $color-light;
+            .list-group-item {
+                background-color: $color-light;
+            }
+        }
+    }
+
+    .mapDiv {
+        object-fit: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
 }

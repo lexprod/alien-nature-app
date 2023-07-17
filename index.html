@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Sonsie+One&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
@@ -33,17 +37,17 @@
 
     <!--responsive navbar, works with jquery script at the bottom-->
 
-    <nav id="responsiveNavbar" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-bottom">
+     <nav id="responsiveNavbar" class="navbar navbar-expand-sm navbar-dark fixed-bottom">
         <div class="collapse navbar-collapse" id="navbarToggle">
             <ul class="navbar-nav p-4 mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#">
-                        <h5 class="text-white h5 ml-1">Home</h5>
+                <li class="nav-item"><a class="nav-link" href="#">
+                        <h5 class=" h5 ml-1">Home</h5>
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="map.html">
-                        <h5 class="text-white h5 ml-1 mx-sm-auto">Map View</h5>
+                        <h5 class=" h5 ml-1 mx-sm-auto">Map View</h5>
                     </a></li>
-                <li class="nav-item"><a class="nav-link" href="knowledgebase.html">
-                        <h5 class="text-white h5 ml-1">Knowledgebase</h5>
+                <li class="nav-item active"><a class="nav-link" href="knowledgebase.html">
+                        <h5 class=" h5 ml-1">Knowledgebase</h5>
                     </a></li>
             </ul>
         </div>
@@ -51,13 +55,14 @@
             aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a role="button" class="btn btn-lg bg-warning mx-auto mr-sm-5" type="button" href="create.html">Post</a>
+        <button class="btn btn-lg bg-warning mx-auto mr-sm-5" type="button">Post</button>
         <span class="navbar-text mx-auto mr-sm-3">
             <a href="#" role="button" data-toggle="modal" data-target="#notificationModal">
                 <h2><i class="fa fa-bell"></i></h2>
             </a>
         </span>
     </nav>
+
 
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
