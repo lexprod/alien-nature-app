@@ -35,12 +35,23 @@ body {
 
     .row-content {
         padding: 20px 50px;
+
         .card {
             background-color: $color-light;
+
             .list-group-item {
                 background-color: $color-light;
             }
         }
+    }
+
+
+    .postMapDiv,
+    .postImgDiv {
+        background-color: $color-light;
+        object-fit: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .mapDiv {

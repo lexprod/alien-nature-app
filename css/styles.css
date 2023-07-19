@@ -18,6 +18,12 @@ body {
       background-color: #f9f4ef; }
       body .row-content .card .list-group-item {
         background-color: #f9f4ef; }
+  body .postMapDiv,
+  body .postImgDiv {
+    background-color: #f9f4ef;
+    object-fit: cover;
+    overflow-y: hidden;
+    overflow-x: hidden; }
   body .mapDiv {
     object-fit: cover;
     overflow-y: hidden;

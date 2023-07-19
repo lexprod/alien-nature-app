@@ -15,7 +15,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Sonsie+One&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Sonsie+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +47,7 @@
                 <li class="nav-item"><a class="nav-link" href="map.html">
                         <h5 class=" h5 ml-1 mx-sm-auto">Map View</h5>
                     </a></li>
-                <li class="nav-item active"><a class="nav-link" href="knowledgebase.html">
+                <li class="nav-item"><a class="nav-link" href="knowledgebase.html">
                         <h5 class=" h5 ml-1">Knowledgebase</h5>
                     </a></li>
             </ul>
@@ -63,17 +65,27 @@
     </nav>
 
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-6">
-                <img class="w-100 p-3 m-2 border border-primary rounded" src="img/photo_dummy.png" alt="User Image" />
+        <div class="row row-content">
+            <div class="col-md-8">
+                <img class="col postImgDiv  p-3 m-2 border border-primary rounded" src="img/photo_dummy.png"
+                    alt="User Image" />
+                <div class="card col p-3 m-2 border border-secondary rounded">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Username</li>
+                        <li class="list-group-item">User text Post</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <img class="w-100 p-3 m-2 border border-secondary rounded" src="img/map_dummy.png" alt="Map" />
+            <div class="col-md-4">
+                <img class="col postMapDiv  p-3 m-2 border border-secondary rounded" src="img/map_dummy.png"
+                    alt="Map" />
+                <div class="card col p-3 m-2 border border-secondary rounded">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Species</li>
+                        <li class="list-group-item">Data</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row row-content align-items-center">
-            <div class="col-sm p-3 m-2 border border-secondary rounded">3</div>
-            <div class="col-sm p-3 m-2 border border-secondary rounded">4</div>
         </div>
     </div>
 

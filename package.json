@@ -7,8 +7,8 @@
     "lite": "lite-server",
     "start": "npm run watch:all",
     "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +25,7 @@
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
