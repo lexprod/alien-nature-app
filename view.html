@@ -27,8 +27,11 @@
     <header class="jumbotron jumbotron-fluid mb-0">
         <div class="container">
             <div class="row">
+                <div class="col-3 col-md-2">
+                    <a href="index.html"><img src="img/PSI.png" class="img-fluid" /></a>
+                </div>
                 <div class="col">
-                    <h1>PlanetSight</h1>
+                    <h1 class="align-self-center">PlanetSight</h1>
                 </div>
             </div>
         </div>
@@ -56,7 +59,7 @@
             aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="btn btn-lg bg-warning mx-auto mr-sm-5" type="button">Post</button>
+        <a href="create.html" id="postButton" class="btn btn-lg mx-auto mr-sm-5" type="button">Post</a>
         <span class="navbar-text mx-auto mr-sm-3">
             <a href="#" role="button" data-toggle="modal" data-target="#notificationModal">
                 <h2><i class="fa fa-bell"></i></h2>
@@ -66,24 +69,31 @@
 
     <div class="container">
         <div class="row row-content">
-            <div class="col-md-8">
-                <img class="col postImgDiv  p-3 m-2 border border-primary rounded" src="img/photo_dummy.png"
+            <div class="col-lg-8">
+                <img class="col postImgDiv  p-3 m-2 border border-secondary rounded" src="img/photo_dummy.png"
                     alt="User Image" />
                 <div class="card col p-3 m-2 border border-secondary rounded">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Username</li>
-                        <li class="list-group-item">User text Post</li>
-                    </ul>
+                    <div class="d-flex justify-content-between card-header">
+                        <div class="font-weight-bold">Username</div>
+                        <div class="font-weight-light"> Posted July 8th 2023</div>
+                    </div>
+                    <div class="card-body">User text Post Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quaerat, suscipit. Dolorem at facilis ipsa earum. Facere numquam corporis ab, asperiores
+                        praesentium amet, vero doloremque perspiciatis pariatur deleniti, quibusdam rem suscipit neque
+                        id repellendus fugit culpa ratione similique autem. Eveniet, dignissimos.</div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <img class="col postMapDiv  p-3 m-2 border border-secondary rounded" src="img/map_dummy.png"
                     alt="Map" />
                 <div class="card col p-3 m-2 border border-secondary rounded">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Species</li>
-                        <li class="list-group-item">Data</li>
-                    </ul>
+                    <div class="card-header">Species name</div>
+                    <div class="card-body">Species details, ipsum dolor sit amet consectetur adipisicing elit. Corporis ea
+                        deleniti voluptas! Magnam dicta expedita esse, at dolore magni quidem. Repellat facere facilis
+                        necessitatibus optio consectetur omnis temporibus eligendi, laudantium ducimus perferendis dicta
+                        voluptates exercitationem amet aliquid perspiciatis. Laudantium autem, cupiditate natus
+                        consequuntur deleniti a animi fuga asperiores eligendi rem.
+                    </div>
                 </div>
             </div>
         </div>

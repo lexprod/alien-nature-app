@@ -1,21 +1,22 @@
-$color-primary: #93b6b4;
-$color-secondary: rgb(161, 153, 147);
+$color-primary: #6D7FC1;
+$color-secondary: #68A691;
 $color-tetriary: #beb998;
-$color-accent-dark: midnightblue;
-$color-accent-light: #efcb8c;
-$color-light: rgb(249, 244, 239);
+$color-accent-dark: #231D1A;
+$color-accent-light: #FC7753;
+$color-light: #F2EFEA;
 
 $body-font: 'Roboto Condensed', sans-serif;
 $header-font: 'Sonsie One', cursive;
+$details-font: 'Roboto Mono', monospace;
 
 
 body {
-    background-color: $color-secondary;
+    background-color: $color-light;
     font-family: $body-font;
 
 
     .jumbotron {
-        background-image: linear-gradient(to top, $color-primary, $color-tetriary, $color-accent-light 90%);
+        background-image: linear-gradient(to top, $color-primary, $color-secondary 90%);
         font-family: $header-font;
         color: $color-light;
     }
@@ -24,7 +25,6 @@ body {
         background-color: $color-accent-dark;
         margin: 0;
         color: $color-light;
-        border: solid 1px $color-secondary;
 
     }
 
@@ -42,13 +42,17 @@ body {
             .list-group-item {
                 background-color: $color-light;
             }
+
+            .card-header {
+                background-color: $color-primary;
+                color: $color-light;
+            }
         }
     }
 
 
     .postMapDiv,
     .postImgDiv {
-        background-color: $color-light;
         object-fit: cover;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -58,6 +62,11 @@ body {
         object-fit: cover;
         overflow-y: hidden;
         overflow-x: hidden;
+    }
+
+    #postButton {
+        background-color: $color-accent-light;
+        color: $color-light;
     }
 
 }

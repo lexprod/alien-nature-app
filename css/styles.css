@@ -1,26 +1,27 @@
 body {
-  background-color: #a19993;
+  background-color: #F2EFEA;
   font-family: "Roboto Condensed", sans-serif; }
   body .jumbotron {
-    background-image: linear-gradient(to top, #93b6b4, #beb998, #efcb8c 90%);
+    background-image: linear-gradient(to top, #6D7FC1, #68A691 90%);
     font-family: "Sonsie One", cursive;
-    color: #f9f4ef; }
+    color: #F2EFEA; }
   body .navbar-dark {
-    background-color: midnightblue;
+    background-color: #231D1A;
     margin: 0;
-    color: #f9f4ef;
-    border: solid 1px #a19993; }
+    color: #F2EFEA; }
   body .breadcrumb {
-    background-color: #f9f4ef; }
+    background-color: #F2EFEA; }
   body .row-content {
     padding: 20px 50px; }
     body .row-content .card {
-      background-color: #f9f4ef; }
+      background-color: #F2EFEA; }
       body .row-content .card .list-group-item {
-        background-color: #f9f4ef; }
+        background-color: #F2EFEA; }
+      body .row-content .card .card-header {
+        background-color: #6D7FC1;
+        color: #F2EFEA; }
   body .postMapDiv,
   body .postImgDiv {
-    background-color: #f9f4ef;
     object-fit: cover;
     overflow-y: hidden;
     overflow-x: hidden; }
@@ -28,3 +29,6 @@ body {
     object-fit: cover;
     overflow-y: hidden;
     overflow-x: hidden; }
+  body #postButton {
+    background-color: #FC7753;
+    color: #F2EFEA; }
