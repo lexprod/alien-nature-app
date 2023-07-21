@@ -61,13 +61,63 @@
             aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <span class="navbar-text mx-auto mr-sm-3">
             <a href="#" role="button" data-toggle="modal" data-target="#notificationModal">
                 <h2><i class="fa fa-bell"></i></h2>
             </a>
         </span>
     </nav>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-lg-8">
+                <!-- <img id="userImg" class="col postImgDiv  p-3 m-2 border border-secondary rounded" src="img/photo_dummy.png"
+                    alt="User Image" /> -->
+                <!-- Uploaded image area-->
+
+                <div class="image-area">
+                    <img id="imageResult" src="#" alt=""
+                        class="img-fluid m-2 px-2 rounded shadow-sm mx-auto d-block">
+                    </div>
+                <!-- Upload image input-->
+                <div class="input-group mb-2 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i
+                                class="fa fa-cloud-upload mr-2 text-muted"></i><small
+                                class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                    </div>
+                </div>
+
+                <div class="card p-2 border border-secondary rounded">
+                    <div class="d-flex justify-content-between card-header">
+                        <div class="font-weight-bold">Username</div>
+                        <div class="font-weight-light"> Posted July 8th 2023</div>
+                    </div>
+                    <div class="card-body">User text Post Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quaerat, suscipit. Dolorem at facilis ipsa earum. Facere numquam corporis ab, asperiores
+                        praesentium amet, vero doloremque perspiciatis pariatur deleniti, quibusdam rem suscipit neque
+                        id repellendus fugit culpa ratione similique autem. Eveniet, dignissimos.</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img class="col postMapDiv p-2 my-2 border border-secondary rounded" src="img/map_dummy.png"
+                    alt="Map" />
+                <div class="card col p-2 my-2 border border-secondary rounded">
+                    <div class="card-header">Species name</div>
+                    <div class="card-body">Species details, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                        ea
+                        deleniti voluptas! Magnam dicta expedita esse, at dolore magni quidem. Repellat facere facilis
+                        necessitatibus optio consectetur omnis temporibus eligendi, laudantium ducimus perferendis dicta
+                        voluptates exercitationem amet aliquid perspiciatis. Laudantium autem, cupiditate natus
+                        consequuntur deleniti a animi fuga asperiores eligendi rem.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
