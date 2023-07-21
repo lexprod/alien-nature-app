@@ -28,6 +28,19 @@ body {
 
         }
     }
+
+    h4 {
+        background-color: $color-accent-dark;
+        color: $color-light;
+    }
+
+    .list-group-item {
+        background-color: $color-light;
+    }
+
+    li > img {
+        height: 100px;
+    }
 }
 
 .navbar-dark {
@@ -44,6 +57,10 @@ body {
 
 .row-content {
     padding: 20px 50px;
+    margin: 0 0 3rem 0;
+    @media only screen and (min-width: 992px){
+        margin: 0 10rem;
+    }
 
     .card {
         background-color: $color-light;
