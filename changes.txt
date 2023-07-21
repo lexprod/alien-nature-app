@@ -1,0 +1,2 @@
+- changed some names/terminology to be less confusing - plantEntry for broad info about plant, Encounter for individual posts with author and location info
+- 
