@@ -17,7 +17,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Sonsie+One&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Sonsie+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -93,7 +95,7 @@
 
 
     <div class="row row-content">
-        <div class="col col-sm-5 col-md-4 col-md-3 ml-xl-5">
+        <div class="col col-sm-5 col-md-4 col-md-3 ml-xl-5 mb-4 mb-sm-0">
             <div class="card">
                 <div class="card-header">
                     <h5>Mosses &amp; Algae</h5>
@@ -101,7 +103,7 @@
 
                 <div class="card-body">
 
-                    <div class="accordion" id="hangingWebAccordion">
+                    <div class="plantEntryLink" id="hangingWebAccordion">
                         <div id="hangingWeb">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -110,15 +112,40 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="hangingWebInfo" class="collapse" aria-labelledby="hangingWeb"
+                        <div id="hangingWebInfo" class="plantEntryInfo collapse pb-3 mb-1 border-bottom" aria-labelledby="hangingWeb"
                             data-parent="#hangingWebAccordion">
-                            <div class="card-body  ">
-                                Description + link to view entry page
-                            </div>
+                           
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="plantName mt-2">Placeholder name</h5>
+                                        <div class="plantClassification mt-2">
+                                            classification here
+                                        </div>
+                                        <div class="plantDescription mt-2">
+                                            Description here, going on for quite some time.
+                                        </div>
+                                        <div class="plantTags my-2">
+                                            tags here
+                                        </div>
+
+                                    </div>
+                                    <img style="height: 100px;" src="img/photo_dummy.png">
+                                </div>
+                                <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                    data-target="#hangingWebEntries"> See Encounters
+      
+                                </button>
+                                <div class="collapse" id="hangingWebEntries">
+                                    <ul class="list-group col mt-3 ml-4">
+                                        <li class="list-group-item"><a href="view.html">Entry #1</a></li>
+                                        <li class="list-group-item"><a href="#">Entry #2</a></li>
+                                        <li class="list-group-item"><a href="#">Entry #3</a></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
 
-                    <div class="accordion" id="bubbleBombAccordion">
+                    <div class="plantEntryLink" id="bubbleBombAccordion">
                         <div id="bubbleBomb">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -127,10 +154,34 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="bubbleBombInfo" class="collapse" aria-labelledby="bubbleBomb"
+                        <div id="bubbleBombInfo" class="plantEntryInfo collapse" aria-labelledby="bubbleBomb"
                             data-parent="#bubbleBombAccordion">
-                            <div class="card-body  ">
-                                Description + link to view entry page
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="plantName mt-2">Placeholder name</h5>
+                                    <div class="plantClassification mt-2">
+                                        classification here
+                                    </div>
+                                    <div class="plantDescription mt-2">
+                                        Description here, going on for quite some time.
+                                    </div>
+                                    <div class="plantTags my-2">
+                                        tags here
+                                    </div>
+
+                                </div>
+                                <img style="height: 100px;" src="img/photo_dummy.png">
+                            </div>
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#bubbleBombEntries"> See Encounters
+  
+                            </button>
+                            <div class="collapse" id="bubbleBombEntries">
+                                <ul class="list-group col mt-3 ml-4">
+                                    <li class="list-group-item"><a href="view.html">Entry #1</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #2</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #3</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -145,7 +196,7 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="accordion  " id="blackObeliskAccordion">
+                    <div class="plantEntryLink" id="blackObeliskAccordion">
                         <div id="blackObelisk">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -155,10 +206,34 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="blackObeliskInfo" class="collapse" aria-labelledby="blackObelisk"
+                        <div id="blackObeliskInfo" class="plantEntryInfo collapse" aria-labelledby="blackObelisk"
                             data-parent="#blackObeliskAccordion">
-                            <div class="card-body  ">
-                                Description + link to view entry page
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="plantName mt-2">Placeholder name</h5>
+                                    <div class="plantClassification mt-2">
+                                        classification here
+                                    </div>
+                                    <div class="plantDescription mt-2">
+                                        Description here, going on for quite some time.
+                                    </div>
+                                    <div class="plantTags my-2">
+                                        tags here
+                                    </div>
+
+                                </div>
+                                <img style="height: 100px;" src="img/photo_dummy.png">
+                            </div>
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#blackObeliskEntries"> See Encounters
+  
+                            </button>
+                            <div class="collapse" id="blackObeliskEntries">
+                                <ul class="list-group col mt-3 ml-4">
+                                    <li class="list-group-item"><a href="view.html">Entry #1</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #2</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #3</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -172,7 +247,7 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="accordion  " id="slapgrassAccordion">
+                    <div class="plantEntryLink  " id="slapgrassAccordion">
                         <div id="slapgrass">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -181,17 +256,41 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="slapgrassInfo" class="collapse" aria-labelledby="slapgrass"
+                        <div id="slapgrassInfo" class="plantEntryInfo collapse" aria-labelledby="slapgrass"
                             data-parent="#slapgrassAccordion">
-                            <div class="card-body  ">
-                                Description + link to view entry page
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="plantName mt-2">Placeholder name</h5>
+                                    <div class="plantClassification mt-2">
+                                        classification here
+                                    </div>
+                                    <div class="plantDescription mt-2">
+                                        Description here, going on for quite some time.
+                                    </div>
+                                    <div class="plantTags my-2">
+                                        tags here
+                                    </div>
+
+                                </div>
+                                <img style="height: 100px;" src="img/photo_dummy.png">
+                            </div>
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#slapgrassEntries"> See Encounters
+  
+                            </button>
+                            <div class="collapse" id="slapgrassEntries">
+                                <ul class="list-group col mt-3 ml-4">
+                                    <li class="list-group-item"><a href="view.html">Entry #1</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #2</a></li>
+                                    <li class="list-group-item"><a href="#">Entry #3</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <!-- new entries are added next to each other in the card-body div. This is a template to automate with js at some point. 
                         
-                        <div class="accordion  " id="plantnameAccordion">
+                        <div class="plantEntryLink  " id="plantnameAccordion">
                         <div id="plantname">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
@@ -200,7 +299,7 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="plantnameInfo" class="collapse" aria-labelledby="plantname"
+                        <div id="plantnameInfo" class="plantEntryInfo collapse" aria-labelledby="plantname"
                             data-parent="#plantnameAccordion">
                             <div class="card-body  ">
                                 Description + link to view entry page
@@ -209,7 +308,9 @@
                     </div> 
                 -->
 
+
                 </div>
+
             </div>
 
         </div>

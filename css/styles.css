@@ -8,6 +8,13 @@ body {
     @media only screen and (max-width: 500px) {
       body .jumbotron h1 {
         font-size: 24px; } }
+  body h4 {
+    background-color: #231D1A;
+    color: #F2EFEA; }
+  body .list-group-item {
+    background-color: #F2EFEA; }
+  body li > img {
+    height: 100px; }
 
 .navbar-dark {
   background-color: #231D1A;
@@ -18,7 +25,11 @@ body {
   background-color: #F2EFEA; }
 
 .row-content {
-  padding: 20px 50px; }
+  padding: 20px 50px;
+  margin: 0 0 3rem 0; }
+  @media only screen and (min-width: 992px) {
+    .row-content {
+      margin: 0 10rem; } }
   .row-content .card {
     background-color: #F2EFEA; }
     .row-content .card .list-group-item {
