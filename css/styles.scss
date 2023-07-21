@@ -15,58 +15,65 @@ body {
     font-family: $body-font;
 
 
+
     .jumbotron {
         background-image: linear-gradient(to top, $color-primary, $color-secondary 90%);
         font-family: $header-font;
         color: $color-light;
-    }
 
-    .navbar-dark {
-        background-color: $color-accent-dark;
-        margin: 0;
-        color: $color-light;
-
-    }
-
-    .breadcrumb {
-        background-color: $color-light;
-
-    }
-
-    .row-content {
-        padding: 20px 50px;
-
-        .card {
-            background-color: $color-light;
-
-            .list-group-item {
-                background-color: $color-light;
+        h1 {
+            @media only screen and (max-width: 500px) {
+                font-size: 24px;
             }
 
-            .card-header {
-                background-color: $color-primary;
-                color: $color-light;
-            }
         }
     }
+}
 
+.navbar-dark {
+    background-color: $color-accent-dark;
+    margin: 0;
+    color: $color-light;
 
-    .postMapDiv,
-    .postImgDiv {
-        object-fit: cover;
-        overflow-y: hidden;
-        overflow-x: hidden;
+}
+
+.breadcrumb {
+    background-color: $color-light;
+
+}
+
+.row-content {
+    padding: 20px 50px;
+
+    .card {
+        background-color: $color-light;
+
+        .list-group-item {
+            background-color: $color-light;
+        }
+
+        .card-header {
+            background-color: $color-primary;
+            color: $color-light;
+        }
     }
+}
 
-    .mapDiv {
-        object-fit: cover;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
 
-    #postButton {
-        background-color: $color-accent-light;
-        color: $color-light;
-    }
+.postMapDiv,
+.postImgDiv {
+    object-fit: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
+.mapDiv {
+    object-fit: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#postButton {
+    background-color: $color-accent-light;
+    color: $color-light;
 }

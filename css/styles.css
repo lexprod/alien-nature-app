@@ -5,30 +5,39 @@ body {
     background-image: linear-gradient(to top, #6D7FC1, #68A691 90%);
     font-family: "Sonsie One", cursive;
     color: #F2EFEA; }
-  body .navbar-dark {
-    background-color: #231D1A;
-    margin: 0;
-    color: #F2EFEA; }
-  body .breadcrumb {
+    @media only screen and (max-width: 500px) {
+      body .jumbotron h1 {
+        font-size: 24px; } }
+
+.navbar-dark {
+  background-color: #231D1A;
+  margin: 0;
+  color: #F2EFEA; }
+
+.breadcrumb {
+  background-color: #F2EFEA; }
+
+.row-content {
+  padding: 20px 50px; }
+  .row-content .card {
     background-color: #F2EFEA; }
-  body .row-content {
-    padding: 20px 50px; }
-    body .row-content .card {
+    .row-content .card .list-group-item {
       background-color: #F2EFEA; }
-      body .row-content .card .list-group-item {
-        background-color: #F2EFEA; }
-      body .row-content .card .card-header {
-        background-color: #6D7FC1;
-        color: #F2EFEA; }
-  body .postMapDiv,
-  body .postImgDiv {
-    object-fit: cover;
-    overflow-y: hidden;
-    overflow-x: hidden; }
-  body .mapDiv {
-    object-fit: cover;
-    overflow-y: hidden;
-    overflow-x: hidden; }
-  body #postButton {
-    background-color: #FC7753;
-    color: #F2EFEA; }
+    .row-content .card .card-header {
+      background-color: #6D7FC1;
+      color: #F2EFEA; }
+
+.postMapDiv,
+.postImgDiv {
+  object-fit: cover;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+.mapDiv {
+  object-fit: cover;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+#postButton {
+  background-color: #FC7753;
+  color: #F2EFEA; }
