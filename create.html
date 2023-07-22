@@ -61,7 +61,7 @@
             aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        <a href="index.html" id="cancelButton" class="btn btn-lg mx-auto mr-sm-5 btn-danger" type="button">Cancel</a>
         <span class="navbar-text mx-auto mr-sm-3">
             <a href="#" role="button" data-toggle="modal" data-target="#notificationModal">
                 <h2><i class="fa fa-bell"></i></h2>
@@ -72,14 +72,10 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-lg-8">
-                <!-- <img id="userImg" class="col postImgDiv  p-3 m-2 border border-secondary rounded" src="img/photo_dummy.png"
-                    alt="User Image" /> -->
                 <!-- Uploaded image area-->
-
-                <div class="image-area">
-                    <img id="imageResult" src="#" alt=""
-                        class="img-fluid m-2 px-2 rounded shadow-sm mx-auto d-block">
-                    </div>
+                <div class="col image-area">
+                    <img id="imageResult" src="#" alt="" class="img-fluid m-2 px-2 rounded shadow-sm">
+                </div>
                 <!-- Upload image input-->
                 <div class="input-group mb-2 px-2 py-2 rounded-pill bg-white shadow-sm">
                     <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
@@ -93,27 +89,41 @@
 
                 <div class="card p-2 border border-secondary rounded">
                     <div class="d-flex justify-content-between card-header">
-                        <div class="font-weight-bold">Username</div>
-                        <div class="font-weight-light"> Posted July 8th 2023</div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Username</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
                     </div>
-                    <div class="card-body">User text Post Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Quaerat, suscipit. Dolorem at facilis ipsa earum. Facere numquam corporis ab, asperiores
-                        praesentium amet, vero doloremque perspiciatis pariatur deleniti, quibusdam rem suscipit neque
-                        id repellendus fugit culpa ratione similique autem. Eveniet, dignissimos.</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="logEntry">Log Entry:</label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Notes"></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <img class="col postMapDiv p-2 my-2 border border-secondary rounded" src="img/map_dummy.png"
-                    alt="Map" />
                 <div class="card col p-2 my-2 border border-secondary rounded">
-                    <div class="card-header">Species name</div>
-                    <div class="card-body">Species details, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                        ea
-                        deleniti voluptas! Magnam dicta expedita esse, at dolore magni quidem. Repellat facere facilis
-                        necessitatibus optio consectetur omnis temporibus eligendi, laudantium ducimus perferendis dicta
-                        voluptates exercitationem amet aliquid perspiciatis. Laudantium autem, cupiditate natus
-                        consequuntur deleniti a animi fuga asperiores eligendi rem.
+                    <div class="card-header">Select location</div>
+                    <img class="card-body col postMapDiv p-2 my-2 border border-secondary rounded img-fluid" src="img/map_dummy.png" alt="Map" />
+                </div>
+            
+                <div class="card col p-2 my-2 border border-secondary rounded">
+                    <div class="card-header">Select Species</div>
+                    <div class="card-body">
+                            <select class="form-control" id="sel1">
+                                <option>Hanging Web</option>
+                                <option>Bubble Bomb</option>
+                                <option>Black Obelisk</option>
+                                <option>Slapgrass</option>
+                            </select>
                     </div>
+                </div>
+
+                <div class="card col p-2 my-2 border border-secondary rounded">
+                    <button class="btn btnSubmit" type="submit">Post</button>
                 </div>
             </div>
         </div>

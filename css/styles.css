@@ -29,7 +29,7 @@ body {
   margin: 0 0 3rem 0; }
   @media only screen and (min-width: 992px) {
     .row-content {
-      margin: 0 10rem; } }
+      margin: 0 1rem; } }
   .row-content .card {
     background-color: #F2EFEA; }
     .row-content .card .list-group-item {
@@ -38,7 +38,6 @@ body {
       background-color: #6D7FC1;
       color: #F2EFEA; }
 
-.image-area,
 .postMapDiv,
 .postImgDiv {
   object-fit: cover;
@@ -50,6 +49,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden; }
 
+.btnSubmit,
 #postButton {
   background-color: #FC7753;
   color: #F2EFEA; }

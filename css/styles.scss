@@ -59,7 +59,7 @@ body {
     padding: 20px 50px;
     margin: 0 0 3rem 0;
     @media only screen and (min-width: 992px){
-        margin: 0 10rem;
+        margin: 0 1rem;
     }
 
     .card {
@@ -76,7 +76,6 @@ body {
     }
 }
 
-.image-area,
 .postMapDiv,
 .postImgDiv {
     object-fit: cover;
@@ -90,6 +89,7 @@ body {
     overflow-x: hidden;
 }
 
+.btnSubmit,
 #postButton {
     background-color: $color-accent-light;
     color: $color-light;
